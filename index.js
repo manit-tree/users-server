@@ -6,7 +6,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000
 
 let uid = 1;
 let users = [];
